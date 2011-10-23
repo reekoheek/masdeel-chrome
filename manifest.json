@@ -1,0 +1,35 @@
+{
+	"name": "Masdeel Chrome",
+	"version": "1.1",
+	"description": "Chrome version of Masdeel.",
+	"icons": {
+		"128": "img/icon128.png",
+		"16": "img/icon16.png",
+		"48": "img/icon48.png"
+	},
+	"background_page": "background.html",
+	"permissions": [
+		"tabs", 
+		"http://*/*",
+		"https://*/*",
+		"unlimitedStorage"
+	],
+	"browser_action": {
+		"name": "Download this video",
+		"default_title": "Download this video",
+		"default_icon": "img/icon16.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*"],
+			"js": ["js/jquery-1.6.4.min.js"],
+			"css": ["css/masdeel.css"]
+		}
+	],
+	"plugins": [ 
+		{ "path": "plugin/download_helper.dll" }, 
+		{ "path": "plugin/download_helper.so" }, 
+		{ "path": "plugin/download_helper_64.so" }, 
+		{ "path": "plugin/download_assistant.plugin" } 
+	]
+}

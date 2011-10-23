@@ -1,0 +1,73 @@
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+</head>
+<body>
+	  <embed id="pluginId" type="application/x-npdownload"></embed>
+	  <script type="text/javascript">
+		  /*
+		var plugin = document.getElementById('pluginId');
+		var downloader = plugin.CreateObject('curl');
+		console.log(downloader);
+		
+		var parameter = 'curl -L -o $FILE_NAME --referer "http://localhost/OTAInstall/" "http://localhost/OTAInstall/MobileApplication1.jad"';
+		var url = "http://localhost/OTAInstall/MobileApplication1.jad";
+		downloader.Download(parameter, url);
+		*/
+	
+/*	
+curl -L -o $FILE_NAME --referer "http://localhost/OTAInstall/" "http://localhost/OTAInstall/MobileApplication1.jad"
+downloader.js:377
+Object
+pageUrl: "http://localhost/OTAInstall/"
+text: " "
+url: "http://localhost/OTAInstall/MobileApplication1.jad"
+__proto__: Object
+*/
+	  </script>
+	  
+	<script type="text/javascript">
+		try {
+			BG = {
+				_downloader: null,
+				getDownloader: function() {
+					if (!this._downloader) {
+						var plugin = document.getElementById('pluginId');
+						this._downloader = plugin.CreateObject('curl');
+					}
+					return this._downloader;
+				},
+				masdeel: function() {
+					chrome.tabs.executeScript(null, {file: "js/grab.js"});
+				},
+				download: function(param) {
+					var parameter = 'curl -L -o $FILE_NAME --referer "' + 
+						param.referer + '" "' + param.url + '" -b "' + 
+						param.cookie + '" -A "' + navigator.userAgent + '" -C - ';
+					this.getDownloader().Download(parameter, param.url);
+					return null;
+				},
+				xhr: function(param) {
+					var response = null;
+					if (typeof(param['success']) == 'undefined') {
+						param['success'] = function(data) {
+							response = data;
+						}
+					}
+					$.ajax(param);
+					return response;
+				},
+				requestHandler: function(request, sender, sendResponse) {
+					var response = BG[request.method](request.param);
+					sendResponse(response);
+				}
+			};
+			chrome.browserAction.onClicked.addListener(BG.masdeel);
+			chrome.extension.onRequest.addListener(BG.requestHandler);
+		} catch (e) {
+			alert(e);
+			console.error(e);
+		}
+	</script>
+</body>
+</html>

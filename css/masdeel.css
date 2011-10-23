@@ -1,0 +1,9 @@
+.masdeel-download {
+	position:absolute;
+	right:3px;
+	top:3px;
+	z-index:999999;
+	background: white;
+	padding: 10px;
+	border: 1px solid black;
+}
