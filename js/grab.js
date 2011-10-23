@@ -154,8 +154,8 @@ function getDownloadUrl(url) {
 			throw new Error();
 		}
 		console.info('Downloading ' + url + ' ..');
-		masdeel.npapiDownload({url:url});
 		$('body').append('<div class="masdeel-download"><a href="' + url + '">Download</a></div>');
+		masdeel.npapiDownload({url:url});
 		//$('body').append('<iframe src="' + url + '" style="width:0px;height:0px"></iframe>');
 	} catch(e) {
 		console.error(e);
