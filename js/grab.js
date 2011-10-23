@@ -154,9 +154,11 @@ function getDownloadUrl(url) {
 			throw new Error();
 		}
 		console.info('Downloading ' + url + ' ..');
+		masdeel.npapiDownload({url:url});
 		$('body').append('<div class="masdeel-download"><a href="' + url + '">Download</a></div>');
-		$('body').append('<iframe src="' + url + '" style="width:0px;height:0px"></iframe>');
+		//$('body').append('<iframe src="' + url + '" style="width:0px;height:0px"></iframe>');
 	} catch(e) {
+		console.error(e);
 		alert(loc + ' currently is not supported!');
 	}
 }
