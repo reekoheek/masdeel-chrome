@@ -141,8 +141,28 @@ var masdeel = {
 		fmt_map = this.splitAttr(fmt_map);
 		fmt_map = unescape(fmt_map['url']);
 		var url = fmt_map.replace(/itag=\d+&/, 'itag=' + biggest +'&');
-		this.npapiDownload({ 'url': url });
-		//cb(url);
+		cb(url);
+	},
+	'vimeo.com': function(cb) {
+		var key = $('div.player').attr('id').replace(/^player_/, '');
+		$('script').each(function(i, data) {
+			var content = $(data).html();
+			if (content.match('var player' + key)) {
+				try {
+					eval(content);
+				} catch(e) {}
+				eval('var clip = clip' + key + ';');
+				var time = clip.config.request.timestamp;
+				var sig = clip.config.request.signature;
+				var clip_id = clip.config.video.id;
+				var quality = clip.config.video.files['h264'][0];
+				console.log(quality);
+				
+				var url = 'http://player.vimeo.com/play_redirect?clip_id=' + clip_id + '&sig=' + sig + 
+					'&time=' + time + '&quality=' + quality + '&codecs=H264,VP8,VP6';
+				cb(url);
+			}
+		});
 	}
 };
 
@@ -155,8 +175,11 @@ function getDownloadUrl(url) {
 		}
 		console.info('Downloading ' + url + ' ..');
 		$('body').append('<div class="masdeel-download"><a href="' + url + '">Download</a></div>');
-		masdeel.npapiDownload({url:url});
-		//$('body').append('<iframe src="' + url + '" style="width:0px;height:0px"></iframe>');
+		try {
+			masdeel.npapiDownload({url:url});
+		} catch(e) {
+			$('body').append('<iframe src="' + url + '" style="width:0px;height:0px"></iframe>');
+		}
 	} catch(e) {
 		console.error(e);
 		alert(loc + ' currently is not supported!');
