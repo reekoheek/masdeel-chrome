@@ -1,0 +1,39 @@
+#masdeel-toolbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    padding: 10px;
+    z-index: 1000000;
+    width: 100%;
+}
+
+#masdeel-toolbar, #masdeel-toolbar * {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#masdeel-menu {
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    bottom: 32px;
+    left: 0;
+    display: none;
+}
+
+#masdeel-toolbar.hover #masdeel-menu {
+    display: block;
+}
+
+#masdeel-menu a {
+    display: block;
+    min-width: 100px;
+    padding: 10px;
+}
+
+#masdeel-menu a.hover {
+    background-color: #600;
+}

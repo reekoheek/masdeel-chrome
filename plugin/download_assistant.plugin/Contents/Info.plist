@@ -41,20 +41,20 @@
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>WebPluginDescription</key>
-	<string>Download Assistant Extension Plugin</string>
+	<string>MasDeel Download Assistant Extension Plugin</string>
 	<key>WebPluginMIMETypes</key>
 	<dict>
-		<key>application/x-npdownload</key>
+		<key>application/x-masdeel-download-assistant</key>
 		<dict>
 			<key>WebPluginExtensions</key>
 			<array>
 				<string>download_assistant</string>
 			</array>
 			<key>WebPluginTypeDescription</key>
-			<string>Download Assistant Extension Plugin</string>
+			<string>MasDeel Download Assistant Extension Plugin</string>
 		</dict>
 	</dict>
 	<key>WebPluginName</key>
-	<string>Download Assistant Extension Plugin</string>
+	<string>MasDeel Download Assistant Extension Plugin</string>
 </dict>
 </plist>

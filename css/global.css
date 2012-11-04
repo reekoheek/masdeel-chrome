@@ -1,0 +1,17 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#options-form {
+    margin: 0 auto;
+    display: table;
+}
+
+#options-form label {
+    display: block;
+}
+
+#options-form input {
+    width: 100%;
+}

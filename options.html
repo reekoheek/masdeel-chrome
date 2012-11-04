@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>MasDeel Options</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css" media="all">
+</head>
+<body>
+    <div id="options-form">
+        <form action="">
+            <div>
+                <label for="">Download Directory</label>
+                <input type="text" name="download_dir" placeholder="Download Directory" />
+            </div>
+            <div>
+                <label for="">File Name</label>
+                <input type="text" name="file_name" placeholder="File Name" />
+                <div>
+                    <table>
+                        <tr>
+                            <td>$HOSTNAME</td>
+                            <td>Hostname</td>
+                        </tr>
+                        <tr>
+                            <td>$TITLE</td>
+                            <td>Title</td>
+                        </tr>
+                        <tr>
+                            <td>$QS[v]</td>
+                            <td>Query String: v</td>
+                        </tr>
+                        <tr>
+                            <td>$FILENAME</td>
+                            <td>Filename</td>
+                        </tr>
+                        <tr>
+                            <td>$EXT</td>
+                            <td>File Extension</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>

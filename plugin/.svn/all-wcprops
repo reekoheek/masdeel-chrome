@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin
+END
+script_object_base.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/script_object_base.h
+END
+download_helper_plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper_plugin.h
+END
+plugin_factory.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/plugin_factory.h
+END
+plugin_base.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/plugin_base.cc
+END
+plugin_base.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/plugin_base.h
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/stdafx.h
+END
+build64.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/build64.sh
+END
+idmantypeinfo.tlb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/idmantypeinfo.tlb
+END
+nptypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/nptypes.h
+END
+downloader_script_object.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/downloader_script_object.cc
+END
+npfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/npfunctions.h
+END
+npapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/npapi.h
+END
+internet_download_manager.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/internet_download_manager.cc
+END
+downloader_script_object.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/downloader_script_object.h
+END
+download_helper_64.so
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper_64.so
+END
+script_object_factory.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/script_object_factory.cc
+END
+com_object_wapper.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/com_object_wapper.cc
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/log.h
+END
+npruntime.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/npruntime.h
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/build.sh
+END
+download_helper.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper.vcproj
+END
+com_object_wapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/com_object_wapper.h
+END
+plugin_factory.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/plugin_factory.cc
+END
+download_helper.suo
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper.suo
+END
+mac_downloader_script_object.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/mac_downloader_script_object.cc
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/resource.h
+END
+mac_downloader_script_object.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/mac_downloader_script_object.h
+END
+dll_entry.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/dll_entry.cc
+END
+download_helper.dll
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper.dll
+END
+utils.cc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/utils.cc
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/Info.plist
+END
+download_helper.so
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper.so
+END
+utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/utils.h
+END
+build_mac.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/build_mac.sh
+END
+internet_download_manager.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/internet_download_manager.h
+END
+npn_entry.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/npn_entry.cc
+END
+download_helper.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper.sln
+END
+npp_entry.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/npp_entry.cc
+END
+download_helper.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper.def
+END
+download_helper_script_object.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper_script_object.cc
+END
+log.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/log.cc
+END
+download_helper_script_object.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper_script_object.h
+END
+script_object_factory.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/script_object_factory.h
+END
+script_object_base.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/script_object_base.cc
+END
+download_helper_plugin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper_plugin.cc
+END
+download_helper.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/243/trunk/release-5.0.2/plugin/download_helper.rc
+END
