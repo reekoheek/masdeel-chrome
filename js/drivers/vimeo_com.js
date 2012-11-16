@@ -19,7 +19,7 @@ var driverImpl = {
             }
         });
 
-        var url = "http://player.vimeo.com/play_redirect?clip_id=" + d.vimeoID + "&sig=" + d.requestSignature + "&time=" + d.requestSignatureExpires + "&quality=" + d.quality + "&codecs=H264,VP8,VP6&type=moogaloop_local&embed_location=";
+        var url = "http://player.vimeo.com/play_redirect?clip_id=" + d.vimeoID + "&sig=" + d.requestSignature + "&time=" + d.requestSignatureExpires + "&quality=" + d.quality + "&codecs=H264,VP8,VP6&type=moogaloop_local&embed_location=&seek=0";
         console.log(url);
         var result = {};
         result[d.vimeoID] = url;
