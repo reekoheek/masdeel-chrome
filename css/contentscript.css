@@ -15,6 +15,10 @@
     font-size: 12px;
 }
 
+#masdeel-toolbar > a {
+    float: left
+}
+
 #masdeel-menu {
     position: absolute;
     color: #fff;

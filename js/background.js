@@ -9,18 +9,17 @@ function isDriverExists(file) {
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     if (changeInfo.status == 'complete') {
         var uris = tab.url.match(/^((http[s]?|ftp):\/\/)?\/?([^\/\.]+\.)*?([^\/\.]+\.[^:\/\s\.]{2,3}(\.[^:\/\s\.]‌​{2,3})?(:\d+)?)($|\/)([^#?\s]+)?(.*?)?(#[\w\-]+)?$/);
-        console.log(uris);
         if (uris) {
             hostname = uris[4] || '';
             var driverFile = hostname.split('.').join('_') + '.js';
 
             $.get('js/drivers/' + driverFile, function() {
                 chrome.tabs.insertCSS(tabId, {file: 'css/contentscript.css'});
-                chrome.tabs.executeScript(tabId, {code: 'APP = ' + JSON.stringify(APP) + ';'});
-                chrome.tabs.executeScript(tabId, {file: 'js/jquery-1.8.2.min.js'});
-                chrome.tabs.executeScript(tabId, {file: 'js/encrypt/aes.js'});
-                chrome.tabs.executeScript(tabId, {file: 'js/drivers/' + driverFile });
-                chrome.tabs.executeScript(tabId, {file: 'js/contentscript.js'});
+                chrome.tabs.executeScript(tabId, {code: 'APP = ' + JSON.stringify(APP) + ';', runAt: 'document_end'});
+                chrome.tabs.executeScript(tabId, {file: 'js/jquery-1.8.2.min.js', runAt: 'document_end'});
+                chrome.tabs.executeScript(tabId, {file: 'js/underscore-min.js', runAt: 'document_end'});
+                chrome.tabs.executeScript(tabId, {file: 'js/drivers/' + driverFile, runAt: 'document_end' });
+                chrome.tabs.executeScript(tabId, {file: 'js/contentscript.js', runAt: 'document_end'});
             });
         }
     }

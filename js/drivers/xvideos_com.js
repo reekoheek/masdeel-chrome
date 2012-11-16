@@ -1,6 +1,6 @@
 var driverImpl = {
 
-    search: function() {
+    search: function(cb) {
         var result = {};
         var flashvars = $('embed').attr('flashvars').split('&');
         var flashvarsO = {};
@@ -9,7 +9,7 @@ var driverImpl = {
             flashvarsO[lines[0]] = unescape(lines[1]);
         }
         result[flashvarsO['id_video']] = flashvarsO['flv_url'];
-        return result;
+        cb(result);
     },
 
     getFileName: function(linkObj) {

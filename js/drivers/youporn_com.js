@@ -1,11 +1,11 @@
 var driverImpl = {
-    search: function() {
+    search: function(cb) {
         var result = {};
         $('.downloadList a').each(function() {
             result[$(this).html()] = $(this).attr('href');
         });
 
-        return result;
+        cb(result);
     },
 
     getFileName: function(linkObj) {
